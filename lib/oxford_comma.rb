@@ -4,7 +4,7 @@ def oxford_comma(array)
     array.join
   when 2
     array.join(' and ')
-  when > 2
+  else
     last_item = array.pop
     array.join(", ") << ", and #{last_item}"
   end
